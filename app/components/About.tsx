@@ -39,10 +39,10 @@ export default function About() {
             maxWidth: "400px",
           }}
         >
-          I am a sound designer with a master&apos;s degree in music composition
-          and digital technologies, and five years of experience in the video
-          game industry. My work focuses on music composition, sound effects
-          design, and the use of AI-driven tools in audio production.
+          I am a sound designer/musician with a master&apos;s degree in music
+          composition and digital technologies, and five years of experience in
+          the video game industry. My work focuses on music composition, sound
+          effects design, and the use of AI-driven tools in audio production.
         </p>
         <p
           style={{
@@ -63,7 +63,7 @@ export default function About() {
           {
             label: "Education",
             value:
-              "MA Music Composition & Digital Technologies\nLithuanian Academy of Music and Theatre",
+              "MA Music Composition & Digital Technologies\nLithuanian Academy of Music and Theatre. \n Bachelor’s Degree in Jazz Guitar \n Lithuanian Academy of Music and Theatre",
           },
           {
             label: "Experience",
