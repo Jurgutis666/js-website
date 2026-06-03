@@ -1,5 +1,6 @@
 //components
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Music from "./components/Music";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Work />
       <Music />
+      <Contact />
     </main>
   );
 }

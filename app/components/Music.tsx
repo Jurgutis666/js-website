@@ -58,7 +58,7 @@ export default function Music() {
       >
         <span
           style={{
-            fontSize: "9px",
+            fontSize: "12px",
             fontWeight: 500,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
