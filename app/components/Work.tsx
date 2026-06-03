@@ -1,10 +1,48 @@
+import Image from "next/image";
+
 const games = [
-  { title: "Dopples World", role: "Music & Sound Design", downloads: "10M+" },
-  { title: "Fluvsies", role: "Music & Sound Design", downloads: "100M+" },
-  { title: "Smolsies 2", role: "Music & Sound Design", downloads: "10M+" },
-  { title: "Kpopsies", role: "Music & Sound Design", downloads: "50M+" },
-  { title: "Fruitsies", role: "Music & Sound Design", downloads: "10M+" },
-  { title: "Power Girls", role: "Music & Sound Design", downloads: "10M+" },
+  {
+    title: "Dopples World",
+    role: "Music & Sound Design",
+    downloads: "10M+",
+    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.dopplesworld&pcampaignid=web_share",
+    img: "/dopples-world.jpg",
+  },
+  {
+    title: "Fluvsies",
+    role: "Music & Sound Design",
+    downloads: "100M+",
+    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.fluvsies.free&pcampaignid=web_share",
+    img: "/fluvsies.jpg",
+  },
+  {
+    title: "Smolsies 2",
+    role: "Music & Sound Design",
+    downloads: "10M+",
+    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.smolsies2&pcampaignid=web_share",
+    img: "/smolsies2.jpg",
+  },
+  {
+    title: "Kpopsies",
+    role: "Music & Sound Design",
+    downloads: "50M+",
+    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.kpopsiescuteunicornpets&pcampaignid=web_share",
+    img: "/kpopsies.jpg",
+  },
+  {
+    title: "Rabbit Riot",
+    role: "Music & Sound Design",
+    downloads: "10K+",
+    link: "https://play.google.com/store/apps/details?id=games.sugarfree.rabbitriot&pcampaignid=web_share",
+    img: "/rabbit-riot.jpg",
+  },
+  {
+    title: "Power Girls",
+    role: "Music & Sound Design",
+    downloads: "10M+",
+    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.powergirlsfantasticheroes&pcampaignid=web_share",
+    img: "/power-girls.jpg",
+  },
 ];
 
 export default function Work() {
@@ -36,50 +74,72 @@ export default function Work() {
         >
           Selected works
         </h2>
-        <div
+        <ul
           className="grid grid-cols-2 gap-px"
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
           {games.map((game) => (
-            <div
+            <li
               key={game.title}
-              style={{ background: "var(--color-dark)", padding: "32px" }}
+              style={{
+                background: "var(--color-dark)",
+                padding: "32px",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
             >
-              <div
-                style={{
-                  fontFamily: "var(--font-cormorant)",
-                  fontSize: "28px",
-                  fontWeight: 300,
-                  color: "#F2EFE8",
-                }}
-              >
-                {game.title}
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-cormorant)",
+                    fontSize: "28px",
+                    fontWeight: 300,
+                    color: "#F2EFE8",
+                  }}
+                >
+                  {game.title}
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "10px",
+                    fontWeight: 500,
+                    letterSpacing: "0.15em",
+                    textTransform: "uppercase",
+                    color: "var(--color-green-muted)",
+                    marginTop: "8px",
+                  }}
+                >
+                  {game.role}
+                </div>
+                <div
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: 300,
+                    color: "var(--color-text-muted)",
+                    marginTop: "6px",
+                  }}
+                >
+                  {game.downloads} downloads
+                </div>
               </div>
-              <div
-                style={{
-                  fontSize: "10px",
-                  fontWeight: 500,
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase",
-                  color: "var(--color-green-muted)",
-                  marginTop: "8px",
-                }}
-              >
-                {game.role}
+
+              <div>
+                <a href={game.link} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={game.img}
+                    alt={game.title}
+                    width={100}
+                    height={100}
+                    style={{
+                      borderRadius: "20px",
+                    }}
+                  />
+                </a>
               </div>
-              <div
-                style={{
-                  fontSize: "13px",
-                  fontWeight: 300,
-                  color: "var(--color-text-muted)",
-                  marginTop: "6px",
-                }}
-              >
-                {game.downloads} downloads
-              </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <div
           style={{
             marginTop: "32px",
