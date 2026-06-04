@@ -37,7 +37,7 @@ export default function Contact() {
             >
               <span>{contact.label}: </span>
               <a target="_blank" rel="noopener noreferrer" href={contact.value}>
-                {contact.value}
+                {contact.display}
               </a>
             </div>
           ))}

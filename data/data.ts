@@ -25,6 +25,7 @@ type Video = LrtVideo | YoutubeVideo;
 type Contact = {
   label: string;
   value: string;
+  display: string;
 };
 
 type Game = {
@@ -95,9 +96,17 @@ export const videos: Video[] = [
 ];
 
 export const contacts: Contact[] = [
-  { label: "email", value: "mailto:email@email.com" },
-  { label: "Behance", value: "https://www.behance.net/jsfx" },
-  { label: "Phone number", value: "tel:+3701234567" },
+  {
+    label: "email",
+    value: "mailto:email@email.com",
+    display: "email@email.com",
+  },
+  {
+    label: "Behance",
+    value: "https://www.behance.net/jsfx",
+    display: "behance.net/jsfx",
+  },
+  { label: "Phone number", value: "tel:+3701234567", display: "+3701234567" },
 ];
 
 export const games: Game[] = [
