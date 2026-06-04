@@ -1,8 +1,4 @@
-const contacts = [
-  { label: "email", value: "email@email.com" },
-  { label: "Behance", value: "https://www.behance.net/jsfx" },
-  { label: "Phone number", value: "+3701234567" },
-];
+import { contacts } from "@/data/data";
 
 export default function Contact() {
   return (

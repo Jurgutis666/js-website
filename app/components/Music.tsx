@@ -1,54 +1,5 @@
 import Image from "next/image";
-
-const albums = [
-  {
-    title: "The Weight Of Sleep",
-    artist: "Cunabula",
-    url: "https://www.discogs.com/release/27942120",
-  },
-  {
-    title: "SpeedNRoll",
-    artist: "Pekla",
-    url: "https://www.discogs.com/master/811703",
-  },
-  {
-    title: "The Witch Bitch Of Hexenville",
-    artist: "Pekla",
-    url: "https://www.discogs.com/release/11643365",
-  },
-  {
-    title: "Boogie with Satan",
-    artist: "Pekla",
-    url: "https://www.discogs.com/release/15480010",
-  },
-  {
-    title: "Kas Esi Tu",
-    artist: "Augustė Vedrickaitė",
-    url: "https://www.discogs.com/release/29904949",
-  },
-];
-
-const videos = [
-  {
-    title: "Sakmė apie dovanotą širdį",
-    description: "Musical drama — LRT",
-    href: "https://www.lrt.lt/mediateka/irasas/2000249571/muzikine-drama-sakme-apie-dovanota-sirdi",
-    thumbnail: "/sakme-image.jpg",
-    type: "lrt",
-  },
-  {
-    title: "Žalvarinis - Einam Tolyn",
-    description: "Žalvarinis - Einam Tolyn Live at Vilnius Castle",
-    embedUrl: "https://www.youtube.com/embed/yqxLvX3T2I8?si=cdbxIsQYMsj4RWWH",
-    type: "youtube",
-  },
-  {
-    title: "CUNABULA - live at Loftas",
-    description: "CUNABULA - live at Loftas [2023 10 21]",
-    embedUrl: "https://www.youtube.com/embed/-jR7-f49-s4?si=glcOH3pwhPJ4jq_l",
-    type: "youtube",
-  },
-];
+import { albums, videos, experimentalMusic } from "@/data/data";
 
 export default function Music() {
   return (
@@ -81,7 +32,7 @@ export default function Music() {
         </h2>
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <div
+            <h3
               style={{
                 fontSize: "9px",
                 fontWeight: 500,
@@ -92,7 +43,7 @@ export default function Music() {
               }}
             >
               Live performances
-            </div>
+            </h3>
             <div
               style={{ display: "flex", flexDirection: "column", gap: "24px" }}
             >
@@ -140,7 +91,7 @@ export default function Music() {
             </div>
           </div>
           <div>
-            <div
+            <h3
               style={{
                 fontSize: "9px",
                 fontWeight: 500,
@@ -151,7 +102,8 @@ export default function Music() {
               }}
             >
               Discography
-            </div>
+            </h3>
+
             {albums.map((album) => (
               <a
                 key={album.title}
@@ -198,6 +150,21 @@ export default function Music() {
             ))}
           </div>
         </div>
+      </section>
+      <section
+        style={{ background: "var(--color-dark)", padding: "80px 40px" }}
+      >
+        <span
+          style={{
+            fontSize: "9px",
+            fontWeight: 500,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            color: "var(--color-green-muted)",
+          }}
+        >
+          Experimental Music
+        </span>
       </section>
     </>
   );

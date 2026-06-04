@@ -1,49 +1,5 @@
 import Image from "next/image";
-
-const games = [
-  {
-    title: "Dopples World",
-    role: "Music & Sound Design",
-    downloads: "10M+",
-    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.dopplesworld&pcampaignid=web_share",
-    img: "/dopples-world.jpg",
-  },
-  {
-    title: "Fluvsies",
-    role: "Music & Sound Design",
-    downloads: "100M+",
-    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.fluvsies.free&pcampaignid=web_share",
-    img: "/fluvsies.jpg",
-  },
-  {
-    title: "Smolsies 2",
-    role: "Music & Sound Design",
-    downloads: "10M+",
-    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.smolsies2&pcampaignid=web_share",
-    img: "/smolsies2.jpg",
-  },
-  {
-    title: "Kpopsies",
-    role: "Music & Sound Design",
-    downloads: "50M+",
-    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.kpopsiescuteunicornpets&pcampaignid=web_share",
-    img: "/kpopsies.jpg",
-  },
-  {
-    title: "Rabbit Riot",
-    role: "Music & Sound Design",
-    downloads: "10K+",
-    link: "https://play.google.com/store/apps/details?id=games.sugarfree.rabbitriot&pcampaignid=web_share",
-    img: "/rabbit-riot.jpg",
-  },
-  {
-    title: "Power Girls",
-    role: "Music & Sound Design",
-    downloads: "10M+",
-    link: "https://play.google.com/store/apps/details?id=com.tutotoons.app.powergirlsfantasticheroes&pcampaignid=web_share",
-    img: "/power-girls.jpg",
-  },
-];
+import { games } from "@/data/data";
 
 export default function Work() {
   return (
