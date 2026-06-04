@@ -4,6 +4,7 @@ export default function Contact() {
   return (
     <>
       <section
+        id="contact"
         style={{
           background: "var(--color-dark)",
           padding: "20px 40px",
@@ -35,7 +36,9 @@ export default function Contact() {
               }}
             >
               <span>{contact.label}: </span>
-              <a href={contact.value}>{contact.value}</a>
+              <a target="_blank" rel="noopener noreferrer" href={contact.value}>
+                {contact.value}
+              </a>
             </div>
           ))}
         </div>

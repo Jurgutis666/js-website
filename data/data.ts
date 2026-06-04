@@ -95,9 +95,9 @@ export const videos: Video[] = [
 ];
 
 export const contacts: Contact[] = [
-  { label: "email", value: "email@email.com" },
+  { label: "email", value: "mailto:email@email.com" },
   { label: "Behance", value: "https://www.behance.net/jsfx" },
-  { label: "Phone number", value: "+3701234567" },
+  { label: "Phone number", value: "tel:+3701234567" },
 ];
 
 export const games: Game[] = [

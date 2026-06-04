@@ -1,7 +1,8 @@
 export default function About() {
   return (
     <section
-      className="grid grid-cols-2"
+      id="about"
+      className="grid grid-cols-1 md:grid-cols-2"
       style={{ background: "var(--color-sand)" }}
     >
       <div className="px-10 py-16">

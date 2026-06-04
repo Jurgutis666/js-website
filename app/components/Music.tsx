@@ -6,6 +6,7 @@ export default function Music() {
   return (
     <>
       <section
+        id="music"
         style={{ background: "var(--color-sand)", padding: "80px 40px" }}
       >
         <span
@@ -31,7 +32,7 @@ export default function Music() {
         >
           Live & Discography
         </h2>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <h3
               style={{

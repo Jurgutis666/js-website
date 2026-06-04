@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-      <section className="grid grid-cols-2" style={{ minHeight: "420px" }}>
+      <section
+        className="grid grid-cols-1 md:grid-cols-2"
+        style={{ minHeight: "420px" }}
+      >
         <div className="flex flex-col justify-center gap-4 px-10 py-16">
           <span
             style={{
@@ -53,6 +56,7 @@ export default function Hero() {
           </p>
         </div>
         <div
+          className="min-h-[400px] "
           style={{
             background: "var(--color-sand-dark)",
             position: "relative",
@@ -72,7 +76,7 @@ export default function Hero() {
         </div>
       </section>
       <div
-        className="flex gap-10 items-center px-10 py-5"
+        className="flex flex-wrap gap-10 px-10 py-5 justify-center"
         style={{ background: "var(--color-dark)" }}
       >
         {[

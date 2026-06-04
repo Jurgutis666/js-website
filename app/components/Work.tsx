@@ -5,6 +5,7 @@ export default function Work() {
   return (
     <>
       <section
+        id="game-audio"
         style={{ background: "var(--color-dark)", padding: "80px 40px" }}
       >
         <span
@@ -31,7 +32,7 @@ export default function Work() {
           Selected works
         </h2>
         <ul
-          className="grid grid-cols-2 gap-px"
+          className="grid grid-cols-1 md:grid-cols-2 gap-px"
           style={{ background: "rgba(255,255,255,0.08)" }}
         >
           {games.map((game) => (
