@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { albums, videos, experimentalMusic } from "@/data/data";
-import { useState } from "react";
 
 export default function Music() {
   return (
