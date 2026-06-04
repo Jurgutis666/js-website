@@ -22,4 +22,4 @@ npm run dev
 
 ## Live Demo
 
-[link čia]
+https://js-website-7hvw.vercel.app/
