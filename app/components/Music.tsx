@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { albums, videos, experimentalMusic } from "@/data/data";
+import { useState } from "react";
 
 export default function Music() {
   return (
@@ -154,17 +155,66 @@ export default function Music() {
       <section
         style={{ background: "var(--color-dark)", padding: "80px 40px" }}
       >
-        <span
+        <h2
           style={{
-            fontSize: "9px",
+            fontSize: "12px",
             fontWeight: 500,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             color: "var(--color-green-muted)",
+            textAlign: "center",
           }}
         >
           Experimental Music
-        </span>
+        </h2>
+        <ul style={{ maxWidth: "700px", margin: "0 auto" }}>
+          {experimentalMusic.map((track) => (
+            <li key={track.title}>
+              <h3
+                style={{
+                  fontFamily: "var(--font-cormorant)",
+                  fontSize: "28px",
+                  fontWeight: 300,
+                  color: "#F2EFE8",
+                }}
+              >
+                {track.title}
+              </h3>
+              {track.type === "playlist" ? (
+                <iframe src={track.musicLink} width="100%" height="350" />
+              ) : (
+                <iframe src={track.musicLink} width="100%" height="166" />
+              )}
+
+              <p
+                style={{
+                  fontSize: "10px",
+                  fontWeight: 500,
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                  color: "var(--color-green-muted)",
+                  marginTop: "8px",
+                }}
+              >
+                {track.description}
+              </p>
+              <a
+                href={track.behanceLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "13px",
+                  fontWeight: 300,
+                  color: "var(--color-text-muted)",
+                  marginTop: "6px",
+                }}
+              >
+                {" "}
+                View on Behance
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );

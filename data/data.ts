@@ -37,6 +37,7 @@ type Game = {
 
 type ExperimentalMusic = {
   title: string;
+  type: string;
   description: string;
   musicLink: string;
   behanceLink: string;
@@ -147,6 +148,7 @@ export const games: Game[] = [
 export const experimentalMusic: ExperimentalMusic[] = [
   {
     title: "Binaural Cycle for Keyboard and Electronics",
+    type: "playlist",
     description:
       "This four‑part, 35‑minute cycle explores the meeting point between rational structure and intuitive expression. Each piece begins from a state of harmonic balance, which is then shaped through a combinatorial process that defines the boundaries of form and material. From there, the music is refined intuitively — carved out like a sculptural object emerging from a single block.The work is designed for ambisonic performance in a spherical environment and for binaural listening through headphones, with the option to adapt it for live performance. The musical material is transformed using digital processing techniques such as glitch, stutter, delay, and reverb, highlighting the contrast between the music’s technocratic logic and its instinctive, expressive nature.",
     musicLink:
@@ -155,7 +157,8 @@ export const experimentalMusic: ExperimentalMusic[] = [
       "https://www.behance.net/gallery/244696051/Binaural-Cycle-for-Keyboard-and-Electronics",
   },
   {
-    title: "Convergence",
+    title: "Convergence (music from objects)",
+    type: "track",
     description:
       "This work is built from recordings of a small metal ball being dropped into a metal pot and spun inside it. The resulting resonances, impacts, and rotational textures form the core material of the composition.",
     musicLink:
@@ -165,6 +168,7 @@ export const experimentalMusic: ExperimentalMusic[] = [
   },
   {
     title: "Saw Blade music (music from objects)",
+    type: "track",
     description:
       "This piece is created entirely from the sound of a diamond saw blade. The raw metallic resonance, friction tones, and percussive textures were recorded, processed, and transformed into a musical composition.",
     musicLink:

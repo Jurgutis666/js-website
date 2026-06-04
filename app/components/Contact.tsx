@@ -4,7 +4,11 @@ export default function Contact() {
   return (
     <>
       <section
-        style={{ background: "var(--color-dark)", padding: "20px 40px" }}
+        style={{
+          background: "var(--color-dark)",
+          padding: "20px 40px",
+          borderTop: "1px solid rgba(255,255,255,0.15)",
+        }}
       >
         <div
           style={{

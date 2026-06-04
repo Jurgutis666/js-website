@@ -16,7 +16,7 @@ export default function Navbar() {
         JS
       </span>
       <div className="flex gap-8">
-        {["About", "Discography", "Game Audio", "Contact"].map((link) => (
+        {["About", "Game Audio", "Music", "Contact"].map((link) => (
           <span
             key={link}
             style={{
