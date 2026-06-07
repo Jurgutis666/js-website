@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
       </section>
       <div
-        className="flex flex-wrap gap-10 px-10 py-5 justify-center"
+        className="grid grid-cols-4 gap-2 px-4 py-5 justify-items-center"
         style={{ background: "var(--color-dark)" }}
       >
         {[
@@ -85,42 +85,38 @@ export default function Hero() {
           { num: "100M+", label: "downloads" },
           { num: "MA", label: "music composition" },
         ].map((stat, i) => (
-          <>
-            {i > 0 && (
-              <div
-                key={`d${i}`}
-                style={{
-                  width: "1px",
-                  height: "40px",
-                  background: "rgba(255,255,255,0.1)",
-                }}
-              />
-            )}
-            <div key={stat.label}>
-              <div
-                style={{
-                  fontFamily: "var(--font-cormorant)",
-                  fontSize: "28px",
-                  fontWeight: 300,
-                  color: "#F2EFE8",
-                }}
-              >
-                {stat.num}
-              </div>
-              <div
-                style={{
-                  fontSize: "9px",
-                  fontWeight: 500,
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase",
-                  color: "var(--color-text-muted)",
-                  marginTop: "2px",
-                }}
-              >
-                {stat.label}
-              </div>
+          <div
+            key={stat.label}
+            style={{
+              borderRight: i < 3 ? "1px solid rgba(255,255,255,0.1)" : "none",
+              textAlign: "center",
+              width: "100%",
+              padding: "0 24px",
+            }}
+          >
+            <div
+              style={{
+                fontFamily: "var(--font-cormorant)",
+                fontSize: "28px",
+                fontWeight: 300,
+                color: "#F2EFE8",
+              }}
+            >
+              {stat.num}
             </div>
-          </>
+            <div
+              style={{
+                fontSize: "9px",
+                fontWeight: 500,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                color: "var(--color-text-muted)",
+                marginTop: "2px",
+              }}
+            >
+              {stat.label}
+            </div>
+          </div>
         ))}
       </div>
     </>
