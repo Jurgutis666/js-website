@@ -98,15 +98,15 @@ export const videos: Video[] = [
 export const contacts: Contact[] = [
   {
     label: "email",
-    value: "mailto:email@email.com",
-    display: "email@email.com",
+    value: "mailto:jurgutis666@gmail.com",
+    display: "jurgutis666@gmail.com",
   },
   {
     label: "Behance",
     value: "https://www.behance.net/jsfx",
     display: "behance.net/jsfx",
   },
-  { label: "Phone number", value: "tel:+3701234567", display: "+3701234567" },
+  { label: "Phone number", value: "tel:+37060003155", display: "+37060003155" },
 ];
 
 export const games: Game[] = [
