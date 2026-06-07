@@ -91,17 +91,10 @@ export default function Hero() {
               borderRight: i < 3 ? "1px solid rgba(255,255,255,0.1)" : "none",
               textAlign: "center",
               width: "100%",
-              padding: "0 24px",
+              padding: "0 8px",
             }}
           >
-            <div
-              style={{
-                fontFamily: "var(--font-cormorant)",
-                fontSize: "28px",
-                fontWeight: 300,
-                color: "#F2EFE8",
-              }}
-            >
+            <div className="font-[var(--font-cormorant)] text-lg md:text-[28px] font-light text-[#F2EFE8]">
               {stat.num}
             </div>
             <div
