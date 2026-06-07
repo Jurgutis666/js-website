@@ -94,7 +94,7 @@ export default function Hero() {
               padding: "0 8px",
             }}
           >
-            <div className="font-[var(--font-cormorant)] text-lg md:text-[28px] font-light text-[#F2EFE8]">
+            <div className="font-[var(--font-cormorant)] text-lg md:text-[28px] text-[#F2EFE8]">
               {stat.num}
             </div>
             <div
